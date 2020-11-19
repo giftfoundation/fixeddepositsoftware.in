@@ -1,0 +1,63 @@
+
+
+/* 3. Service
+-------------- */
+    
+    #service {
+	    padding: 10px;
+	    display: block;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+	    z-index: 900;
+	    text-align: center;
+    }
+  
+	
+	 .service-col
+	 {
+	 background:#FFF9EE;
+	 margin-bottom:15px;
+
+	 }
+   
+    .service-col:hover {
+	    background: #8B0522;
+	    color: #fff;
+		  box-shadow: 5px 5px 3px #d6c0c5;
+    }
+    
+    .service-col h4 {
+	    color: #e67e22;
+		font-size:18px;
+	
+	}
+	
+	.service-col:hover h4 {
+	    color: #e67e22 !important;
+	    border-bottom: 1px solid #fff;
+    }
+    
+    .service-col p {
+	font-weight:500;
+	    color: #000;
+		   padding: 10px;
+    }
+    
+     .service-col:hover p {
+	    color: #fff;
+    }
+    
+    .service-col:hover > div {
+        background: #29F7ED;
+        color: #fff;
+    }
+    
+    .icon-wrench, .icon-mobile, .icon-desktop {
+	    background-color:#F3750C;
+        color: #e67e22;
+    }
+
+@media (min-width:992px){ 
+  .col-md-4{width:25%}
+}

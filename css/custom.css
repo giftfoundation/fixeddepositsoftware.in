@@ -1,0 +1,90 @@
+
+    
+    /* 5. SERVICE
+    -------------------------------------------------- */
+.service-col
+{
+text-align:center;
+}
+   
+    
+    .service-col:hover {
+	    -webkit-transition: all 0.6s linear;
+        -moz-transition: all 0.6s linear;
+        -o-transition: all 0.6s linear;
+        -ms-transition: all 0.6s linear;
+        transition: all 0.6s linear;
+    }
+    
+    .service-col:hover p {
+	    padding: 10px;
+    }
+
+    .service-col:hover > div {
+        text-shadow: 1px -1px 0px rgba(0,0,0,0.5);
+	    -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        border-radius: 50%;
+	    -webkit-border-radius: 50%;
+	    -moz-border-radius: 50%;
+    }
+    
+    /* Icon rotation effect  */
+    
+    .rotate {
+	    -webkit-transition-duration: 0.8s;
+        -moz-transition-duration: 0.8s;
+        -o-transition-duration: 0.8s;
+        transition-duration: 0.8s;
+        border-radius: 50%;
+    }
+    
+    .rotate:hover {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        border-radius: 50%;   
+    }
+    
+   /* Icons  */
+    
+    .icon-wrench, .icon-mobile {
+        background: url('../img/icon-bg.png') repeat-x center center;
+        position: relative;
+        display: inline-block;
+        width: 140px;
+        height: 140px;
+        padding-top: 25px;
+        border-radius: 50%;
+	    -webkit-border-radius: 50%;
+	    -moz-border-radius: 50%;
+    }
+    
+    .icon-desktop {
+        background: url('../img/icon-bg.png') repeat-x center center;
+        position: relative;
+        display: inline-block;
+        width: 140px;
+        height: 140px;
+        padding-top: 22px;
+        border-radius: 50%;
+	    -webkit-border-radius: 50%;
+	    -moz-border-radius: 50%;
+    }
+    
+    .webdesign {
+	    z-index: 1000;
+    }
+    
+    /* Hire Us Button  */
+    
+    .service-btn {
+	    margin-top: 40px;
+    }
+    
+    .btn-hire {
+        text-transform: uppercase;
+        font-size: 20px;
+	    padding: 10px 20px;
+    }
