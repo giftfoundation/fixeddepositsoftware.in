@@ -109,6 +109,7 @@
     </style>
     <script type='text/javascript' src='/js/jquery.js'></script>
 <script type='text/javascript' src='/js/jquery-migrate.min.js'></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LeFPbMaAAAAAGW2OvAsNdieU3Nj7N4bchhHEP-M"></script>
 </head>
 <body>
     <!-- ==================== Start Header top Area ==================== -->
@@ -645,7 +646,7 @@
             <!-- MultiStep Form -->
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                  <form class="form-horizontal" method="post" action="https://formspree.io/info@fixeddepositsoftware.in">
+                  <form class="form-horizontal" method="post" action="https://e.genuineinfotech.com/">
                     <div class="form-group">
                       <label class="col-md-4 control-label" for="firstname">First Name*</label>
                       <div class="col-md-8">
@@ -978,7 +979,7 @@
                               </div>
                               <div class="form-group">
                                 <label for="g_email">Email</label>
-                                <input type="email" name="Email" class="form-control" id="g_email" placeholder="Email" required="true" />
+                                <input type="email" name="email" class="form-control" id="g_email" placeholder="Email" required="true" />
                               </div>
                               <div class="form-group">
                                 <label for="g_mobile">Mobile</label>
@@ -988,7 +989,7 @@
                                 <label for="g_msg">Message</label>
                                 <textarea name="Message" class="form-control" id="g_msg" rows="3" placeholder="Message" ></textarea>
                               </div>
-                              <input type="hidden" name="_next" value="http://fixeddepositsoftware.in/thanks.html" />
+                              <input type="hidden" name="_next" value="http://www.fixeddepositsoftware.in/thanks.html" />
                               <input type="hidden" name="_subject" value="Enquiry on Fixeddepositsoftware.in" />
                               <input type="hidden" name="_format" value="plain" />
                               <input type="text" name="_gotcha" style="display:none" />
@@ -1216,5 +1217,18 @@
     <script type='text/javascript' src='/js/ui/position.min.js'></script>
     <script type='text/javascript' src='/js/ui/dialog.min.js'></script>    
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77277474-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-77277474-1');</script>
+    <script>
+   $(document).ready(function(){
+     $( "input[name='email']" ).on("change",function(){
+       $("input[name='_gotcha']").val("");        
+       grecaptcha.ready(function() {
+        grecaptcha.execute('6LeFPbMaAAAAAGW2OvAsNdieU3Nj7N4bchhHEP-M', {action: 'submit'}).then(function(token) {
+            /*console.log( "token \n " + token);*/
+            $("input[name='_gotcha']").val(token);
+        });
+       });
+    });
+   });
+ </script>
 </body>
 </html>
