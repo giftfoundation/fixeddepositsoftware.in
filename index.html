@@ -1195,18 +1195,5 @@
     <script type='text/javascript' src='/js/ui/position.min.js'></script>
     <script type='text/javascript' src='/js/ui/dialog.min.js'></script>    
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77277474-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-77277474-1');</script>
-    <script>
-   $(document).ready(function(){
-     $( "input[name='email']" ).on("change",function(){
-       $("input[name='_gotcha']").val("");        
-       grecaptcha.ready(function() {
-        grecaptcha.execute('6Leew_4aAAAAAOyhbCJaNfBmDfkQOeGgiUfK1NVf', {action: 'submit'}).then(function(token) {
-            /*console.log( "token \n " + token);*/
-            $("input[name='_gotcha']").val(token);
-        });
-       });
-    });
-   });
- </script>
 </body>
 </html>
